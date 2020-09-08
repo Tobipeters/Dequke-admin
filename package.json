@@ -1,0 +1,51 @@
+{
+  "name": "deqube",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.4.1",
+    "autoprefixer": "^9.8.4",
+    "axios": "^0.19.2",
+    "crypto-js": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "nprogress": "^0.2.0",
+    "postcss-cli": "^7.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-feather": "^2.0.8",
+    "react-notifications": "^1.6.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "tailwindcss": "^1.4.6"
+  },
+  "scripts": {
+    "build:tailwind": "postcss src/assets/styles/tailwind.css -o src/assets/styles/main.css",
+    "watch:tailwind": "postcss -w src/assets/styles/tailwind.css -o src/assets/styles/main.css",
+    "start": "run-p watch:tailwind start:react",
+    "start:react": "react-scripts start",
+    "prebuild": "npm run build:tailwind",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
