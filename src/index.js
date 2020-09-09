@@ -1,16 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./assets/styles/main.css";
-import "react-notifications/lib/notifications.css";
-import "antd/dist/antd.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Provider } from "react-redux";
+
+import { store } from "./store";
+
+import "./assets/main.css";
+import "react-notifications/lib/notifications.css";
 
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
   document.getElementById("root")
 );
 

@@ -1,6 +1,6 @@
 import GeneralSettings from "./GeneralSettings";
 import AdminSettings from "./AdminSettings";
-import EmailSettings from "./EmailNotification";
+import EmailNotification from "./EmailNotification";
 import PaymentSettings from "./Payment";
 import PostSettings from "./PostSettings";
 import RegistrationSettings from "./Registration";
@@ -11,7 +11,7 @@ import UploadSettings from "./Upload";
 export {
   GeneralSettings,
   AdminSettings,
-  EmailSettings,
+  EmailNotification,
   PaymentSettings,
   PostSettings,
   RegistrationSettings,

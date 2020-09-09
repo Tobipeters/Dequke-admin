@@ -1,21 +1,18 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
-import SideMenu from "./components/SideMenu";
-import Menu from "./components/mobile/Menu";
-import MainBody from "./components/MainBody";
+import Login from "./pages/login/Login";
+import Navigation from "./pages/Navigation/Navigation";
 
 const App = () => {
   return (
-    <div className="body app">
-      <Menu />
-      <div className="flex">
-        <SideMenu />
-        <div className="content">
-          <div className="m-6 mt-10">
-            <MainBody />
-          </div>
-        </div>
-      </div>
+    <div>
+      <Router>
+        <Switch>
+          <Route exact path="/" name="login" component={Login} />
+          <Navigation />
+        </Switch>
+      </Router>
     </div>
   );
 };

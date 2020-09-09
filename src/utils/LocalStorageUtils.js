@@ -1,4 +1,4 @@
-import utils from "";
+import utils from "./validateUtils";
 
 //stores encrpted token in Local storage
 class localStorageUtil {
@@ -11,6 +11,7 @@ class localStorageUtil {
         "What you are adding to the local storage must be an Object"
       );
     }
+
     const keys = Object.keys(object);
     localStorageUtil.RemoveItems(keys);
     for (var property in object) {
@@ -22,6 +23,7 @@ class localStorageUtil {
   }
 
   static RemoveItems(Item) {
+    utils;
     if (utils.isStringLike(Item)) {
       localStorage.removeItem(Item);
       // console.log("is removeddff");

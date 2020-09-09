@@ -1,96 +1,53 @@
 import React from "react";
-import * as Icon from "react-feather";
 
-import Card from "../../components/Card";
-import DropdownGroupSelect from "../../components/DropdownGroupSelect";
-import ButtonToggleText from "../../components/ButtonToggleText";
-
-import { Table, Tag, Space } from "antd";
+import Card from "../../components/card/Card";
+import BarChart from "../../components/barChart/BarChart";
 
 const Dashboard = () => {
-  const columns = [
-    {
-      title: "Name",
-      dataIndex: "name",
-      key: "name",
-      render: (text) => <a>{text}</a>,
-    },
-    {
-      title: "Age",
-      dataIndex: "age",
-      key: "age",
-    },
-    {
-      title: "Address",
-      dataIndex: "address",
-      key: "address",
-    },
-    {
-      title: "Tags",
-      key: "tags",
-      dataIndex: "tags",
-      render: (tags) => (
-        <>
-          {tags.map((tag) => {
-            let color = tag.length > 5 ? "geekblue" : "green";
-            if (tag === "loser") {
-              color = "volcano";
-            }
-            return (
-              <Tag color={color} key={tag}>
-                {tag.toUpperCase()}
-              </Tag>
-            );
-          })}
-        </>
-      ),
-    },
-    {
-      title: "Action",
-      key: "action",
-      render: (text, record) => (
-        <Space size="middle">
-          <a>
-            <Icon.Edit />{" "}
-          </a>
-          <a>
-            <Icon.Trash2 />
-          </a>
-        </Space>
-      ),
-    },
-  ];
-
   const data = [
-    {
-      key: "1",
-      name: "John Brown",
-      age: 32,
-      address: "New York No. 1 Lake Park",
-      tags: ["nice", "developer"],
-    },
-    {
-      key: "2",
-      name: "Jim Green",
-      age: 42,
-      address: "London No. 1 Lake Park",
-      tags: ["loser"],
-    },
-    {
-      key: "3",
-      name: "Joe Black",
-      age: 32,
-      address: "Sidney No. 1 Lake Park",
-      tags: ["cool", "teacher"],
-    },
+    ["Year", "Sales"],
+    ["2014", 200],
+    ["2015", 460],
+    ["2016", 660],
+    ["2017", 350],
+    ["2014", 200],
+    ["2015", 460],
+    ["2016", 660],
+    ["2017", 350],
   ];
 
+  const options = {
+    backgroundColor: "#fff",
+    chart: {
+      title: "Dashboard",
+      position: "center",
+    },
+  };
   return (
     <div>
-      <Card />
-      <DropdownGroupSelect />
-      <ButtonToggleText />
-      <Table dataSource={data} columns={columns} />
+      <div className="top-bar text-lg text-gray-600 mt-1">Dashboard</div>
+      <hr className="mb-3" />
+      <BarChart data={data} options={options} />
+      {/* <Bar data={data} /> */}
+      <div class="col-span-12 mt-8">
+        <div class="grid grid-cols-9 gap-6 mt-5">
+          <Card cardTitle="116,000" cardBody="Team" />
+          <Card cardTitle="116,000" cardBody="Male" />
+          <Card cardTitle="116,000" cardBody="Female" />
+          <Card cardTitle="116,000" cardBody="Banned Team" />
+          <Card cardTitle="116,000" cardBody="Banned Users" />
+          <Card cardTitle="116,000" cardBody="Inactive Users" />
+          <Card cardTitle="116,000" cardBody="Online Users" />
+          <Card cardTitle="116,000" cardBody="Offline Users" />
+          <Card cardTitle="116,000" cardBody="Posts" />
+          <Card cardTitle="116,000" cardBody="Comments" />
+          <Card cardTitle="116,000" cardBody="Groups" />
+          <Card cardTitle="116,000" cardBody="Events" />
+          <Card cardTitle="116,000" cardBody="Messages" />
+          <Card cardTitle="116,000" cardBody="Notifications" />
+          <Card cardTitle="116,000" cardBody="Posts" />
+        </div>
+      </div>
     </div>
   );
 };
