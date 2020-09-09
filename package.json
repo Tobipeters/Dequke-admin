@@ -1,37 +1,40 @@
 {
-  "name": "deqube",
+  "name": "de-qube-admin",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "antd": "^4.4.1",
-    "autoprefixer": "^9.8.4",
+    "antd": "^4.4.3",
     "axios": "^0.19.2",
+    "chart.js": "^2.9.3",
     "crypto-js": "^4.0.0",
-    "npm-run-all": "^4.1.5",
     "nprogress": "^0.2.0",
-    "postcss-cli": "^7.1.1",
     "prop-types": "^15.7.2",
+    "querystring": "^0.2.0",
     "react": "^16.13.1",
+    "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.1",
+    "react-emoji-render": "^1.2.4",
     "react-feather": "^2.0.8",
+    "react-google-charts": "^3.0.15",
     "react-notifications": "^1.6.0",
+    "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "tailwindcss": "^1.4.6"
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "build:tailwind": "postcss src/assets/styles/tailwind.css -o src/assets/styles/main.css",
-    "watch:tailwind": "postcss -w src/assets/styles/tailwind.css -o src/assets/styles/main.css",
-    "start": "run-p watch:tailwind start:react",
-    "start:react": "react-scripts start",
-    "prebuild": "npm run build:tailwind",
-    "build": "react-scripts build",
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,5 +50,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
   }
 }
