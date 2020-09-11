@@ -261,42 +261,40 @@ export default function Profile() {
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="3">
                   <Card.Body>
-                    <div className="row py-3 border-bottom">
-                      <div className="col-md-6">
-                        <div className="pb-2">
-                          <p className="mb-0 text-muted d-inline mr-3">Job Title/Role</p>
-                          <p className="mb-0 d-inline mr-1">Software Developer </p>
-                          <span className="badge badge-success">Present</span>
+                    <div className="row py-3">
+
+                      <div className="col-md-12 py-3 ">
+                        <div className="row">
+                          <div className="col-md-6">
+                            <p className="mb-2 text-muted">Job Title/Role</p>
+                            <p className="mb-0 d-inline mr-2">Software Developer</p>
+                            <span className="badge badge-success">Present</span>
+                          </div>
+
+                          <div className="col-md-4">
+                            <p className="mb-2 text-muted">Search Directory</p>
+                            <p className="mb-0">Developer</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">Location</p>
+                            <p className="mb-0">Yaba, Lagos</p>
+                          </div>
+
+                          <div className="col-md-2 pt-4">
+                            <p className="mb-2 text-muted">Start Date</p>
+                            <p className="mb-0">August, 2019</p>
+                          </div>
+                          <div className="col-md-2 pt-4">
+                            <p className="mb-2 text-muted">End Date</p>
+                            <p className="mb-0 d-inline">April, 2020</p>
+                          </div>
+
+                          <div className="col-md-8 pt-4">
+                            <p className="mb-2 text-muted">Job Description</p>
+                            <p className="mb-0 ">Since 1960, Nigeria has been decoding Lorem Ipsum text for its readers, infiltrating its subcultures, observing and analyzing its shifting rhythms, digging up its unreported stories and confronting the city's political leaders. From the beginning... </p>
+                          </div>
                         </div>
-
-                        <div className="pb-2">
-                          <p className="mb-0 text-muted d-inline mr-3">Job Description</p>
-                          <p className="mb-0 d-inline">Architect Software Development flow</p>
-                        </div>
-
-
-                        <div className="pb-2">
-                          <p className="mb-0 text-muted d-inline mr-3">Search Directory</p>
-                          <p className="mb-0 d-inline">Develoepr</p>
-                        </div>
-
                       </div>
-
-                      <div className="col-md-6">
-                        <div className="pb-2">
-                          <p className="mb-0 text-muted d-inline mr-3">Location</p>
-                          <p className="mb-0 d-inline">Lagos Island</p>
-                        </div>
-                        <div className="pb-2">
-                          <p className="mb-0 text-muted d-inline mr-3">Start Date</p>
-                          <p className="mb-0 d-inline">August, 2019</p>
-                        </div>
-                        <div className="pb-2">
-                          <p className="mb-0 text-muted d-inline mr-3">End Date</p>
-                          <p className="mb-0 d-inline">April, 2020</p>
-                        </div>
-                      </div>
-
 
                     </div>
                   </Card.Body>
@@ -311,7 +309,122 @@ export default function Profile() {
                 </h5>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="4">
-                  <Card.Body>Experience and Achievement body here</Card.Body>
+                  <Card.Body>
+                    <div className="row">
+
+                      <div className="col-md-12 py-3 border-bottom">
+                        <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Courses</h6>
+                        <div className="row py-4">
+                          <div className="col-md-4">
+                            <p className="mb-2 text-muted">School Name</p>
+                            <p className="mb-0">Udemy</p>
+                          </div>
+                          <div className="col-md-4">
+                            <p className="mb-2 text-muted">Course</p>
+                            <p className="mb-0">Digital Marketing</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">Start Date</p>
+                            <p className="mb-0">Sept, 2008</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">End Date</p>
+                            <p className="mb-0">Sept, 2014</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div className="col-md-12 py-3 border-bottom">
+                        <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Organisation</h6>
+                        <div className="row py-4">
+                          <div className="col-md-3">
+                            <p className="mb-2 text-muted">Organisation Name</p>
+                            <p className="mb-0">Kafy Dance Group</p>
+                          </div>
+                          <div className="col-md-3">
+                            <p className="mb-2 text-muted">Position</p>
+                            <p className="mb-0">Instructor</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">Location</p>
+                            <p className="mb-0">Ajah, Lagos</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">Start Date</p>
+                            <p className="mb-0">Sept, 2008</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">End Date</p>
+                            <p className="mb-0">Sept, 2014</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-md-12 py-3 border-bottom">
+                        <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Publications</h6>
+                        <div className="row py-4">
+                          <div className="col-md-8">
+                            <p className="mb-2 text-muted">Publication Title</p>
+                            <p className="mb-0">Nigeria: Looking back on 60 years</p>
+                          </div>
+                          <div className="col-md-4">
+                            <p className="mb-2 text-muted">Date</p>
+                            <p className="mb-0">Oct 22. 2019</p>
+                          </div>
+                          <div className="col-md-12 pt-3">
+                            <p className="mb-2 text-muted">Publication Details</p>
+                            <p className="mb-0">Since 1960, Nigeria has been decoding Lorem Ipsum text for its readers, infiltrating its subcultures, observing and analyzing its shifting rhythms, digging up its unreported stories and confronting the city's political leaders. From the beginning,</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-md-12 py-3 border-bottom">
+                        <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Honors &amp; Awards</h6>
+                        <div className="row py-4">
+                          <div className="col-md-5">
+                            <p className="mb-2 text-muted">Award Title</p>
+                            <p className="mb-0">Grammy Award</p>
+                          </div>
+                          <div className="col-md-5">
+                            <p className="mb-2 text-muted">Award Type</p>
+                            <p className="mb-0">Gold</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">Year</p>
+                            <p className="mb-0">2019</p>
+                          </div>
+                          <div className="col-md-12 pt-3">
+                            <p className="mb-2 text-muted">Award Details</p>
+                            <p className="mb-0">Since 1960, Nigeria has been decoding Lorem Ipsum text for its readers, infiltrating its subcultures, observing and analyzing its shifting rhythms, digging up its unreported stories and confronting the city's political leaders. From the beginning,</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-md-12 py-3">
+                        <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Projects</h6>
+                        <div className="row py-4">
+                          <div className="col-md-5">
+                            <p className="mb-2 text-muted">Project Title</p>
+                            <p className="mb-0">Dance All</p>
+                          </div>
+                          <div className="col-md-5">
+                            <p className="mb-2 text-muted">Location</p>
+                            <p className="mb-0">Victoria Island, Lagos</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">Year</p>
+                            <p className="mb-0">2018</p>
+                          </div>
+                          <div className="col-md-12 pt-3">
+                            <p className="mb-2 text-muted">Project Details</p>
+                            <p className="mb-0">Since 1960, Nigeria has been decoding Lorem Ipsum text for its readers, infiltrating its subcultures, observing and analyzing its shifting rhythms, digging up its unreported stories and confronting the city's political leaders. From the beginning,</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
 
@@ -326,7 +439,35 @@ export default function Profile() {
                   <Card.Body>
                     <div className="row">
 
-                      <div className="col-md-12 py-3">
+                      <div className="col-md-12 py-3 border-bottom">
+                        <h6 className="mb-4 uppercase" style={{ color: "#8e9092b3" }}>Recommendations Received</h6>
+                        <div className="row">
+                          <div className="col-md-3">
+                            <p className="mb-2 text-muted">Recommended by</p>
+                            <p className="mb-0">kaffy</p>
+                          </div>
+                          <div className="col-md-3">
+                            <p className="mb-2 text-muted">Relationship</p>
+                            <p className="mb-0">Instructor</p>
+                          </div>
+                          <div className="col-md-3">
+                            <p className="mb-2 text-muted">Position</p>
+                            <p className="mb-0">Team Lead</p>
+                          </div>
+                          <div className="col-md-3">
+                            <p className="mb-2 text-muted">Event</p>
+                            <p className="mb-0">Sparks</p>
+                          </div>
+                          <div className="col-md-12 pt-4">
+                            <p className="mb-2 text-muted">Recommendation Text</p>
+                            <p className="mb-0">Awesome guy</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div className="col-md-12 py-3 ">
+                        <h6 className="mb-4 uppercase" style={{ color: "#8e9092b3" }}>Recommendations Given</h6>
                         <div className="row">
                           <div className="col-md-3">
                             <p className="mb-2 text-muted">Recommended by</p>
