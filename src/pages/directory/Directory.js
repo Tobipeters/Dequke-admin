@@ -19,8 +19,8 @@ const Directory = () => {
     <div>
       <div className="top-bar text-lg text-gray-600 mt-1">Directory</div>
       <hr className="mb-3" />
-      <div class="col-span-12 mt-8">
-        <div class="grid grid-cols-9 gap-6 mt-5">
+      <div className="col-span-12 mt-8">
+        <div className="grid grid-cols-9 gap-6 mt-5">
           <Card cardTitle="116,000" cardBody="Directory" />
           <Card cardTitle="116,000" cardBody="Attributes" />
         </div>

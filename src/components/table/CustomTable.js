@@ -288,7 +288,7 @@ export default function CustomTable({
     }
   };
   return (
-    <Grid conatiner>
+    <Grid container>
       <Grid item>
         <Grid container justify="space-between" alignItems="flex-start">
           <Grid item>

@@ -10,7 +10,7 @@ const Navigation = () => {
         <NavBar />
         <MobileNavbar />
         <div className="content">
-          <div className="m-1">
+          <div className="m-1"> 
             <MainBody />
           </div>
         </div>
