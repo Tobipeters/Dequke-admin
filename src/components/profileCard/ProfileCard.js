@@ -186,7 +186,7 @@ const ProfileCard = ({
             }}
           >
             {openTab === 3 ? <Icon.User className="w-4 h-4 mr-2" /> : ""}
-            Privacy
+            Privacy &amp; User Settings
           </a>
           <a
             data-toggle="tab"
