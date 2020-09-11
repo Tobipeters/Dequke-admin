@@ -12,6 +12,7 @@ export default function Profile() {
       <div className="">
         <div className="intro-y box col-span-12 pb-6">
           <div className="p-3" id="new-products">
+            
 
             <Accordion defaultActiveKey="0">
               {/* Personal Info */}
