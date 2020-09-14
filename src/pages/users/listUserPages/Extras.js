@@ -169,109 +169,92 @@ export default function Extras() {
               <Card.Body>
                 <div className="row">
 
-                  <div className="col-md-12 py-3 border-bottom">
-                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Other Education</h6>
+                  <div className="col-md-12 py-4 border-bottom">
+                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Followers</h6>
                     <div className="row">
                       <div className="col-md-4">
-                        <p className="mb-2 text-muted">School Name</p>
-                        <p className="mb-0">Greenspring College</p>
+                        <p className="mb-2 text-muted">Username</p>
+                        <p className="mb-0">Bosun Jones</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Thumbnail</p>
+                        <img src={AlbumImage} width="60" height="60" className="rounded" />
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">User Category</p>
+                        <p className="mb-0">Pro</p>
                       </div>
                       <div className="col-md-2">
                         <p className="mb-2 text-muted">Location</p>
-                        <p className="mb-0">Anthony, Lagos</p>
+                        <p className="mb-0">Lagos, Nigeria</p>
                       </div>
                       <div className="col-md-2">
-                        <p className="mb-2 text-muted">Grade</p>
-                        <p className="mb-0">Distinction</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Start Date</p>
-                        <p className="mb-0">Sept, 2008</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">End Date</p>
+                        <p className="mb-2 text-muted">Date Followed</p>
                         <p className="mb-0">Sept, 2014</p>
                       </div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-12 py-3 border-bottom">
-                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>University Education</h6>
-                    <div className="row">
-                      <div className="col-md-4">
-                        <p className="mb-2 text-muted">School Name</p>
-                        <p className="mb-0">University of Liverpool</p>
+                      <div className="col-md-3">
+                        <p className="mb-2 mt-4 text-muted">Total Likes</p>
+                        <p className="mb-0">2032</p>
                       </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Location</p>
-                        <p className="mb-0">United Kingdom</p>
+                      <div className="col-md-3">
+                        <p className="mb-2 mt-4 text-muted">Total Post</p>
+                        <p className="mb-0">232</p>
                       </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Grade</p>
-                        <p className="mb-0">First Class</p>
+                      <div className="col-md-3">
+                        <p className="mb-2 mt-4 text-muted">Total Follower</p>
+                        <p className="mb-0">2032</p>
                       </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Start Date</p>
-                        <p className="mb-0">Sept, 2016</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">End Date</p>
-                        <p className="mb-0">Sept, 2019</p>
+                      <div className="col-md-3">
+                        <p className="mb-2 mt-4 text-muted">Total Following</p>
+                        <p className="mb-0">203</p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="col-md-12 py-3 border-bottom">
-                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Secondary Education</h6>
+                  <div className="col-md-12 py-4 ">
+                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Following</h6>
                     <div className="row">
                       <div className="col-md-4">
-                        <p className="mb-2 text-muted">School Name</p>
-                        <p className="mb-0">Greenspring College</p>
+                        <p className="mb-2 text-muted">Username</p>
+                        <p className="mb-0">Bosun Jones</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Thumbnail</p>
+                        <img src={AlbumImage} width="60" height="60" className="rounded" />
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">User Category</p>
+                        <p className="mb-0">Pro</p>
                       </div>
                       <div className="col-md-2">
                         <p className="mb-2 text-muted">Location</p>
-                        <p className="mb-0">Anthony, Lagos</p>
+                        <p className="mb-0">Lagos, Nigeria</p>
                       </div>
                       <div className="col-md-2">
-                        <p className="mb-2 text-muted">Grade</p>
-                        <p className="mb-0">Distinction</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Start Date</p>
-                        <p className="mb-0">Sept, 2008</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">End Date</p>
+                        <p className="mb-2 text-muted">Date Followed</p>
                         <p className="mb-0">Sept, 2014</p>
                       </div>
+                      <div className="col-md-3">
+                        <p className="mb-2 mt-4 text-muted">Total Likes</p>
+                        <p className="mb-0">2032</p>
+                      </div>
+                      <div className="col-md-3">
+                        <p className="mb-2 mt-4 text-muted">Total Post</p>
+                        <p className="mb-0">232</p>
+                      </div>
+                      <div className="col-md-3">
+                        <p className="mb-2 mt-4 text-muted">Total Follower</p>
+                        <p className="mb-0">2032</p>
+                      </div>
+                      <div className="col-md-3">
+                        <p className="mb-2 mt-4 text-muted">Total Following</p>
+                        <p className="mb-0">203</p>
+                      </div>
                     </div>
                   </div>
 
-                  <div className="col-md-12 py-3">
-                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Primary Education</h6>
-                    <div className="row">
-                      <div className="col-md-4">
-                        <p className="mb-2 text-muted">School Name</p>
-                        <p className="mb-0">Greenspring College</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Location</p>
-                        <p className="mb-0">Anthony, Lagos</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Grade</p>
-                        <p className="mb-0">Distinction</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Start Date</p>
-                        <p className="mb-0">Sept, 2002</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">End Date</p>
-                        <p className="mb-0">Sept, 2008</p>
-                      </div>
-                    </div>
-                  </div>
+
+
                 </div>
               </Card.Body>
             </Accordion.Collapse>
@@ -286,10 +269,137 @@ export default function Extras() {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body>
-                <div className="d-flex py-2">
-                  <p className="bg-dark px-3 py-2 mb-0 text-light mr-5 d-inline rounded">Dancing</p>
-                  <p className="bg-dark px-3 py-2 mb-0 text-light mr-5 d-inline rounded">Gymnastics</p>
-                  <p className="bg-dark px-3 py-2 mb-0 text-light mr-5 d-inline rounded">Sport</p>
+                <div className="row">
+
+                  <div className="col-md-12 py-4 border-bottom">
+                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Event Organized by you</h6>
+                    <div className="row">
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Event Thumbnail</p>
+                        <img src={AlbumImage} width="60" height="60" className="rounded" />
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Name</p>
+                        <p className="mb-0">Emerge: Believe Become Emerge</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Category</p>
+                        <p className="mb-0">Performance</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Location</p>
+                        <p className="mb-0">Offline</p>
+                      </div>
+                      <div className="col-md-4">
+                        <p className="mb-2 text-muted">Address</p>
+                        <p className="mb-0">123, Lagos Street, Lagos State, Nigeria</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 mt-4 text-muted">Start End</p>
+                        <p className="mb-0">Sept, 2014</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 mt-4 text-muted">Start End</p>
+                        <p className="mb-0">Sept, 2014</p>
+                      </div>
+                      {/* Recurring event should be conditional */}
+                      <div className="col-md-2">
+                        <p className="mb-2 mt-4 text-muted">Reocurring Event</p>
+                        <p className="mb-0">Yes (Weekly)</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 mt-4 text-muted">Price</p>
+                        <p className="mb-0">Free</p>
+                      </div>
+                      <div className="col-md-3">
+                        <p className="mb-2 mt-4 text-muted">Event Description</p>
+                        <p className="mb-0">Emerge: Believe Become Emerge</p>
+                      </div>
+                      <div className="col-md-12">
+                        <p className="mb-2 mt-4 text-muted">Attendees</p>
+                        <div className="row">
+                          <div className="col-3">
+                            <img src={AlbumImage} width="30" height="30" className="rounded mr-2 d-inline" />
+                            <span>Bosun Jones</span>
+                          </div>
+                          <div className="col-3">
+                            <img src={AlbumImage} width="30" height="30" className="rounded mr-2 d-inline" />
+                            <span>Bosun Jones</span>
+                          </div>
+                          <div className="col-3">
+                            <img src={AlbumImage} width="30" height="30" className="rounded mr-2 d-inline" />
+                            <span>Bosun Jones</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="col-md-12 py-4">
+                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Attending</h6>
+                    <div className="row">
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Event Thumbnail</p>
+                        <img src={AlbumImage} width="60" height="60" className="rounded" />
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Name</p>
+                        <p className="mb-0">Emerge: Believe Become Emerge</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Category</p>
+                        <p className="mb-0">Performance</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Location</p>
+                        <p className="mb-0">Offline</p>
+                      </div>
+                      <div className="col-md-4">
+                        <p className="mb-2 text-muted">Address</p>
+                        <p className="mb-0">123, Lagos Street, Lagos State, Nigeria</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 mt-4 text-muted">Start End</p>
+                        <p className="mb-0">Sept, 2014</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 mt-4 text-muted">Start End</p>
+                        <p className="mb-0">Sept, 2014</p>
+                      </div>
+                      {/* Recurring event should be conditional */}
+                      <div className="col-md-2">
+                        <p className="mb-2 mt-4 text-muted">Reocurring Event</p>
+                        <p className="mb-0">Yes (Weekly)</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 mt-4 text-muted">Price</p>
+                        <p className="mb-0">Free</p>
+                      </div>
+                      <div className="col-md-3">
+                        <p className="mb-2 mt-4 text-muted">Event Description</p>
+                        <p className="mb-0">Emerge: Believe Become Emerge</p>
+                      </div>
+                      <div className="col-md-12">
+                        <p className="mb-2 mt-4 text-muted">Attendees</p>
+                        <div className="row">
+                          <div className="col-3">
+                            <img src={AlbumImage} width="30" height="30" className="rounded mr-2 d-inline" />
+                            <span>Bosun Jones</span>
+                          </div>
+                          <div className="col-3">
+                            <img src={AlbumImage} width="30" height="30" className="rounded mr-2 d-inline" />
+                            <span>Bosun Jones</span>
+                          </div>
+                          <div className="col-3">
+                            <img src={AlbumImage} width="30" height="30" className="rounded mr-2 d-inline" />
+                            <span>Bosun Jones</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
 
               </Card.Body>
@@ -305,37 +415,94 @@ export default function Extras() {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="3">
               <Card.Body>
-                <div className="row py-3">
+                <div className="row">
 
-                  <div className="col-md-12 py-3 ">
+                  <div className="col-md-12 py-4 border-bottom">
+                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>All Content on Demand</h6>
                     <div className="row">
-                      <div className="col-md-6">
-                        <p className="mb-2 text-muted">Job Title/Role</p>
-                        <p className="mb-0 d-inline mr-2">Software Developer</p>
-                        <span className="badge badge-success">Present</span>
+                      <div className="col-md-3">
+                        <p className="mb-2 text-muted">Name</p>
+                        <p className="mb-0">Bosun Jones</p>
                       </div>
-
-                      <div className="col-md-4">
-                        <p className="mb-2 text-muted">Search Directory</p>
-                        <p className="mb-0">Developer</p>
+                      <div className="col-md-1">
+                        <p className="mb-2 text-muted">Rating</p>
+                        <p className="mb-0">4/5</p>
                       </div>
                       <div className="col-md-2">
-                        <p className="mb-2 text-muted">Location</p>
-                        <p className="mb-0">Yaba, Lagos</p>
+                        <p className="mb-2 text-muted">Thumbnail</p>
+                        <img src={AlbumImage} width="60" height="60" className="rounded" />
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Category</p>
+                        <p className="mb-0">Performance</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Price</p>
+                        <p className="mb-0">2000</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Total Audience</p>
+                        <p className="mb-0">2032</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 mt-4 text-muted">Date Last Updated</p>
+                        <p className="mb-0">Sept, 2014</p>
+                      </div>
+                      <div className="col-md-10">
+                        <p className="mb-2 mt-4 text-muted">Description</p>
+                        <p className="mb-0">Content on Demand Description will show here</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-md-12 py-4 border-bottom">
+                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Single Content on Demand</h6>
+                    <div className="row">
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">COD Name</p>
+                        <p className="mb-0">Bosun Jones</p>
+                      </div>
+                      <div className="col-md-1">
+                        <p className="mb-2 text-muted">Rating</p>
+                        <p className="mb-0">4/5</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Price</p>
+                        <p className="mb-0">2000</p>
+                      </div>
+                      {/* <div className="col-md-2">
+                        <p className="mb-2 text-muted">Thumbnail</p>
+                        <img src={AlbumImage} width="60" height="60" className="rounded" />
+                      </div> */}
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Category</p>
+                        <p className="mb-0">Performance</p>
+                      </div>
+                      <div className="col-md-5">
+                        <p className="mb-2 mt-4 text-muted">Description</p>
+                        <p className="mb-0">Content on Demand Description will show here</p>
                       </div>
 
-                      <div className="col-md-2 pt-4">
-                        <p className="mb-2 text-muted">Start Date</p>
-                        <p className="mb-0">August, 2019</p>
+                      <div className="col-md-6">
+                        <p className="mb-2 mt-4 text-muted">Module List</p>
+                        <p className="mb-0">2032</p>
                       </div>
-                      <div className="col-md-2 pt-4">
-                        <p className="mb-2 text-muted">End Date</p>
-                        <p className="mb-0 d-inline">April, 2020</p>
-                      </div>
-
-                      <div className="col-md-8 pt-4">
-                        <p className="mb-2 text-muted">Job Description</p>
-                        <p className="mb-0 ">Since 1960, Nigeria has been decoding Lorem Ipsum text for its readers, infiltrating its subcultures, observing and analyzing its shifting rhythms, digging up its unreported stories and confronting the city's political leaders. From the beginning... </p>
+                      <div className="col-md-6">
+                        <p className="mb-2 mt-4 text-muted">Audience List</p>
+                        <div className="row">
+                          <div className="col-3">
+                            <img src={AlbumImage} width="30" height="30" className="rounded mr-2 d-inline" />
+                            <span>Bosun Jones</span>
+                          </div>
+                          <div className="col-3">
+                            <img src={AlbumImage} width="30" height="30" className="rounded mr-2 d-inline" />
+                            <span>Bosun Jones</span>
+                          </div>
+                          <div className="col-3">
+                            <img src={AlbumImage} width="30" height="30" className="rounded mr-2 d-inline" />
+                            <span>Bosun Jones</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -354,120 +521,7 @@ export default function Extras() {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="4">
               <Card.Body>
-                <div className="row">
 
-                  <div className="col-md-12 py-3 border-bottom">
-                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Courses</h6>
-                    <div className="row py-4">
-                      <div className="col-md-4">
-                        <p className="mb-2 text-muted">School Name</p>
-                        <p className="mb-0">Udemy</p>
-                      </div>
-                      <div className="col-md-4">
-                        <p className="mb-2 text-muted">Course</p>
-                        <p className="mb-0">Digital Marketing</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Start Date</p>
-                        <p className="mb-0">Sept, 2008</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">End Date</p>
-                        <p className="mb-0">Sept, 2014</p>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div className="col-md-12 py-3 border-bottom">
-                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Organisation</h6>
-                    <div className="row py-4">
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Organisation Name</p>
-                        <p className="mb-0">Kafy Dance Group</p>
-                      </div>
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Position</p>
-                        <p className="mb-0">Instructor</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Location</p>
-                        <p className="mb-0">Ajah, Lagos</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Start Date</p>
-                        <p className="mb-0">Sept, 2008</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">End Date</p>
-                        <p className="mb-0">Sept, 2014</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-12 py-3 border-bottom">
-                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Publications</h6>
-                    <div className="row py-4">
-                      <div className="col-md-8">
-                        <p className="mb-2 text-muted">Publication Title</p>
-                        <p className="mb-0">Nigeria: Looking back on 60 years</p>
-                      </div>
-                      <div className="col-md-4">
-                        <p className="mb-2 text-muted">Date</p>
-                        <p className="mb-0">Oct 22. 2019</p>
-                      </div>
-                      <div className="col-md-12 pt-3">
-                        <p className="mb-2 text-muted">Publication Details</p>
-                        <p className="mb-0">Since 1960, Nigeria has been decoding Lorem Ipsum text for its readers, infiltrating its subcultures, observing and analyzing its shifting rhythms, digging up its unreported stories and confronting the city's political leaders. From the beginning,</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-12 py-3 border-bottom">
-                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Honors &amp; Awards</h6>
-                    <div className="row py-4">
-                      <div className="col-md-5">
-                        <p className="mb-2 text-muted">Award Title</p>
-                        <p className="mb-0">Grammy Award</p>
-                      </div>
-                      <div className="col-md-5">
-                        <p className="mb-2 text-muted">Award Type</p>
-                        <p className="mb-0">Gold</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Year</p>
-                        <p className="mb-0">2019</p>
-                      </div>
-                      <div className="col-md-12 pt-3">
-                        <p className="mb-2 text-muted">Award Details</p>
-                        <p className="mb-0">Since 1960, Nigeria has been decoding Lorem Ipsum text for its readers, infiltrating its subcultures, observing and analyzing its shifting rhythms, digging up its unreported stories and confronting the city's political leaders. From the beginning,</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-md-12 py-3">
-                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Projects</h6>
-                    <div className="row py-4">
-                      <div className="col-md-5">
-                        <p className="mb-2 text-muted">Project Title</p>
-                        <p className="mb-0">Dance All</p>
-                      </div>
-                      <div className="col-md-5">
-                        <p className="mb-2 text-muted">Location</p>
-                        <p className="mb-0">Victoria Island, Lagos</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Year</p>
-                        <p className="mb-0">2018</p>
-                      </div>
-                      <div className="col-md-12 pt-3">
-                        <p className="mb-2 text-muted">Project Details</p>
-                        <p className="mb-0">Since 1960, Nigeria has been decoding Lorem Ipsum text for its readers, infiltrating its subcultures, observing and analyzing its shifting rhythms, digging up its unreported stories and confronting the city's political leaders. From the beginning,</p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
@@ -483,59 +537,36 @@ export default function Extras() {
               <Card.Body>
                 <div className="row">
 
-                  <div className="col-md-12 py-3 border-bottom">
-                    <h6 className="mb-4 uppercase" style={{ color: "#8e9092b3" }}>Recommendations Received</h6>
+                  <div className="col-md-12 py-4">
+                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Profile Viewer List</h6>
                     <div className="row">
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Recommended by</p>
-                        <p className="mb-0">kaffy</p>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Thumbnail</p>
+                        <img src={AlbumImage} width="60" height="60" className="rounded" />
                       </div>
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Relationship</p>
-                        <p className="mb-0">Instructor</p>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Name</p>
+                        <p className="mb-0">Bosun Jones</p>
                       </div>
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Position</p>
-                        <p className="mb-0">Team Lead</p>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">User Category</p>
+                        <p className="mb-0">Performance</p>
                       </div>
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Event</p>
-                        <p className="mb-0">Sparks</p>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Date Checked</p>
+                        <p className="mb-0">Sept, 2014</p>
                       </div>
-                      <div className="col-md-12 pt-4">
-                        <p className="mb-2 text-muted">Recommendation Text</p>
-                        <p className="mb-0">Awesome guy</p>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Followers</p>
+                        <p className="mb-0">222</p>
                       </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Following</p>
+                        <p className="mb-0">223</p>
+                      </div>
+
                     </div>
                   </div>
-
-
-                  <div className="col-md-12 py-3 ">
-                    <h6 className="mb-4 uppercase" style={{ color: "#8e9092b3" }}>Recommendations Given</h6>
-                    <div className="row">
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Recommended by</p>
-                        <p className="mb-0">kaffy</p>
-                      </div>
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Relationship</p>
-                        <p className="mb-0">Instructor</p>
-                      </div>
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Position</p>
-                        <p className="mb-0">Team Lead</p>
-                      </div>
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Event</p>
-                        <p className="mb-0">Sparks</p>
-                      </div>
-                      <div className="col-md-12 pt-4">
-                        <p className="mb-2 text-muted">Recommendation Text</p>
-                        <p className="mb-0">Awesome guy</p>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
               </Card.Body>
             </Accordion.Collapse>
@@ -552,66 +583,36 @@ export default function Extras() {
               <Card.Body>
                 <div className="row">
 
-                  <div className="col-md-12 py-3 border-bottom">
-                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Pages You Created</h6>
+                  <div className="col-md-12 py-4">
+                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Follower Requests</h6>
                     <div className="row">
-                      <div className="col-md-3">
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Thumbnail</p>
+                        <img src={AlbumImage} width="60" height="60" className="rounded" />
+                      </div>
+                      <div className="col-md-2">
                         <p className="mb-2 text-muted">Name</p>
                         <p className="mb-0">Bosun Jones</p>
                       </div>
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Role of User</p>
-                        <p className="mb-0">Team Lead</p>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">User Category</p>
+                        <p className="mb-0">Performance</p>
                       </div>
                       <div className="col-md-2">
-                        <p className="mb-2 text-muted">No of Followers</p>
-                        <p className="mb-0">234</p>
+                        <p className="mb-2 text-muted">Date Request was Sent</p>
+                        <p className="mb-0">Sept, 2014</p>
                       </div>
                       <div className="col-md-2">
-                        <p className="mb-2 text-muted">No of Employees</p>
-                        <p className="mb-0">20</p>
+                        <p className="mb-2 text-muted">Followers Number</p>
+                        <p className="mb-0">222</p>
                       </div>
                       <div className="col-md-2">
-                        <p className="mb-2 text-muted">Date Joined</p>
-                        <p className="mb-0">Sept, 2019</p>
+                        <p className="mb-2 text-muted">Following Number</p>
+                        <p className="mb-0">223</p>
                       </div>
-                      <div className="col-md-12 pt-4">
-                        <p className="mb-2 text-muted">Bio </p>
-                        <p className="mb-0">Nice Group </p>
-                      </div>
+
                     </div>
                   </div>
-
-                  <div className="col-md-12 py-3 border-bottom">
-                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Pages You Belong</h6>
-                    <div className="row">
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Name</p>
-                        <p className="mb-0">Bosun Jones</p>
-                      </div>
-                      <div className="col-md-3">
-                        <p className="mb-2 text-muted">Role of User</p>
-                        <p className="mb-0">Team Lead</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">No of Followers</p>
-                        <p className="mb-0">234</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">No of Employees</p>
-                        <p className="mb-0">20</p>
-                      </div>
-                      <div className="col-md-2">
-                        <p className="mb-2 text-muted">Date Joined</p>
-                        <p className="mb-0">Sept, 2019</p>
-                      </div>
-                      <div className="col-md-12 pt-4">
-                        <p className="mb-2 text-muted">Bio </p>
-                        <p className="mb-0">Nice Group </p>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
               </Card.Body>
             </Accordion.Collapse>
@@ -626,110 +627,36 @@ export default function Extras() {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="7">
               <Card.Body>
-                <div className="col-md-12 py-4 border-bottom">
-                  <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Groups You Created</h6>
-                  <div className="row">
-                    <div className="col-md-3">
-                      <p className="mb-2 text-muted">Name</p>
-                      <p className="mb-0">Bosun Jones</p>
-                    </div>
-                    <div className="col-md-3">
-                      <p className="mb-2 text-muted">Role of User</p>
-                      <p className="mb-0">Team Lead</p>
-                    </div>
-                    <div className="col-md-2">
-                      <p className="mb-2 text-muted">No of Followers</p>
-                      <p className="mb-0">234</p>
-                    </div>
-                    <div className="col-md-2">
-                      <p className="mb-2 text-muted">No of Employees</p>
-                      <p className="mb-0">20</p>
-                    </div>
-                    <div className="col-md-2">
-                      <p className="mb-2 text-muted">Date Joined</p>
-                      <p className="mb-0">Sept, 2019</p>
-                    </div>
-                    <div className="col-md-12 pt-4">
-                      <p className="mb-2 text-muted">Bio </p>
-                      <p className="mb-0">Nice Group </p>
-                    </div>
-                    <div className="col-md-12 pt-4">
-                      <p className="mb-2 text-muted">Activities</p>
-                      <div className="py-3">
-                        <p className="mb-3" style={{ color: "#8e9092b3" }}>Posts</p>
-                        <ul className="list-group mb-0">
-                          <li className="list-group-item">Post section here ...</li>
-                          <li className="list-group-item">Post section here ...</li>
-                        </ul>
-                      </div>
-                      <div className="py-3">
-                        <p className="mb-3" style={{ color: "#8e9092b3" }}>Comments</p>
-                        <ul className="list-group mb-0">
-                          <li className="list-group-item">Comment section here ...</li>
-                          <li className="list-group-item">Comment section here ...</li>
-                        </ul>
-                      </div>
-                      <div className="py-3">
-                        <p className="mb-3" style={{ color: "#8e9092b3" }}>Likes</p>
-                        <ul className="list-group mb-0">
-                          <li className="list-group-item">Like section here ...</li>
-                          <li className="list-group-item">Like section here ...</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <div className="row">
 
-                <div className="col-md-12 py-4 border-bottom">
-                  <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Groups You Belong</h6>
-                  <div className="row">
-                    <div className="col-md-3">
-                      <p className="mb-2 text-muted">Name</p>
-                      <p className="mb-0">Bosun Jones</p>
-                    </div>
-                    <div className="col-md-3">
-                      <p className="mb-2 text-muted">Role of User</p>
-                      <p className="mb-0">Team Lead</p>
-                    </div>
-                    <div className="col-md-2">
-                      <p className="mb-2 text-muted">No of Followers</p>
-                      <p className="mb-0">234</p>
-                    </div>
-                    <div className="col-md-2">
-                      <p className="mb-2 text-muted">No of Employees</p>
-                      <p className="mb-0">20</p>
-                    </div>
-                    <div className="col-md-2">
-                      <p className="mb-2 text-muted">Date Joined</p>
-                      <p className="mb-0">Sept, 2019</p>
-                    </div>
-                    <div className="col-md-12 pt-4">
-                      <p className="mb-2 text-muted">Bio </p>
-                      <p className="mb-0">Nice Group </p>
-                    </div>
-                    <div className="col-md-12 pt-4">
-                      <p className="mb-2 text-muted">Activities</p>
-                      <div className="py-3">
-                        <p className="mb-3" style={{ color: "#8e9092b3" }}>Posts</p>
-                        <ul className="list-group mb-0">
-                          <li className="list-group-item">Post section here ...</li>
-                          <li className="list-group-item">Post section here ...</li>
-                        </ul>
+                  <div className="col-md-12 py-4">
+                    <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Bookings</h6>
+                    <div className="row">
+                      <div className="col-md-3">
+                        <p className="mb-2 text-muted">Event Name</p>
+                        <p className="mb-0">Bosun Jones</p>
                       </div>
-                      <div className="py-3">
-                        <p className="mb-3" style={{ color: "#8e9092b3" }}>Comments</p>
-                        <ul className="list-group mb-0">
-                          <li className="list-group-item">Comment section here ...</li>
-                          <li className="list-group-item">Comment section here ...</li>
-                        </ul>
+                      <div className="col-md-3">
+                        <p className="mb-2 text-muted">Location</p>
+                        <p className="mb-0">Lagos, Nigeria</p>
                       </div>
-                      <div className="py-3">
-                        <p className="mb-3" style={{ color: "#8e9092b3" }}>Likes</p>
-                        <ul className="list-group mb-0">
-                          <li className="list-group-item">Like section here ...</li>
-                          <li className="list-group-item">Like section here ...</li>
-                        </ul>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Start Date</p>
+                        <p className="mb-0">Sept, 2014</p>
                       </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">End Date</p>
+                        <p className="mb-0">Sept, 2014</p>
+                      </div>
+                      <div className="col-md-2">
+                        <p className="mb-2 text-muted">Numbers of Days</p>
+                        <p className="mb-0">222</p>
+                      </div>
+                      <div className="col-md-12">
+                        <p className="mb-2 text-muted">Special Note</p>
+                        <p className="mb-0">Special Note text will appear here...</p>
+                      </div>
+
                     </div>
                   </div>
                 </div>
