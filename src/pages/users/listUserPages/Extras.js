@@ -1,12 +1,36 @@
-import React from "react";
+import React, {useState} from "react";
 import { useHistory, Link } from "react-router-dom";
 import ButtonToggleInput from "../../../components/buttonToggleInput/ButtonToggleInput";
 import Button from "../../../components/button/Button";
 import CustomTable from "../../../components/table/CustomTable";
 import { Accordion, Card } from "react-bootstrap"
 import AlbumImage from "../../../assets/dist/images/preview-1.jpg"
+import ProfileModal from "../../../components/ProfileModal"
+
+
+
+
 
 export default function Extras() {
+
+  const [modal, setModal] = useState(false);
+  const [nestedModal, setNestedModal] = useState(false);
+  const [closeAll, setCloseAll] = useState(false);
+
+  const toggle = () => setModal(!modal);
+  const toggleNested = () => {
+      setNestedModal(!nestedModal);
+      setCloseAll(false);
+  }
+  const toggleAll = () => {
+      setNestedModal(!nestedModal);
+      setCloseAll(true);
+  }
+
+  // modal function for follower
+  
+
+  
   const history = useHistory();
   const onLinkClicked = (e, payload) => {
     console.log(JSON.stringify(payload));
@@ -14,7 +38,7 @@ export default function Extras() {
   };
 
   const onActionClicked = (e, payload) => {
-    alert(JSON.stringify(payload));
+    alert(JSON.stringify(payload)); 
   };
   return (
     <div>
@@ -167,6 +191,8 @@ export default function Extras() {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
+                
+              <p onClick={toggle}>All Follower</p>
                 <div className="row">
 
                   <div className="col-md-12 py-4 border-bottom">
@@ -400,6 +426,8 @@ export default function Extras() {
                     </div>
                   </div>
 
+                
+                
                 </div>
 
               </Card.Body>
@@ -512,11 +540,11 @@ export default function Extras() {
             </Accordion.Collapse>
           </Card>
 
-          {/* Messages */}
+          {/* Jobs */}
           <Card className="border-0 mb-5">
             <Accordion.Toggle className="border-bottom-0" role="button" as={Card.Header} eventKey="4">
               <h5 className="mb-0  text-gray-900">
-                Messages
+                Jobs
                 </h5>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="4">
@@ -788,6 +816,15 @@ export default function Extras() {
 
 
       </div>
+
+    {/* Modal for Event */}
+    <ProfileModal
+    modal={modal}
+    modalHeader={"My Working Modal"}
+    modalBody={"Modal Body will be here"}
+    />
+
+
 
     </div>
   );

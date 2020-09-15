@@ -10,9 +10,9 @@ export default function Profile() {
   return (
     <div>
       <div className="">
-        <div className="intro-y box col-span-12 pb-6">
-          <div className="p-3" id="new-products">
-            
+        <div className="intro-y box col-span-12 py-4">
+          <div className="" id="new-products">
+
 
             <Accordion defaultActiveKey="0">
               {/* Personal Info */}
@@ -31,18 +31,22 @@ export default function Profile() {
                       </div>
                       <div className="col-md-3">
                         <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Birthday</h6>
-                        <p className="mb-0 text-dark">16/3/2020</p>
+                        <p className="mb-0 text-dark">January 22, 2020</p>
                       </div>
                       <div className="col-md-6">
                         <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Phone Number</h6>
                         <div className="row">
-                          <div className="col-md-6">
+                          <div className="col-md-4">
                             <p className="mb-2 text-muted">Mobile Contact</p>
                             <p className="mb-0">0810 333 4040</p>
                           </div>
-                          <div className="col-md-6">
+                          <div className="col-md-4">
                             <p className="mb-2 text-muted">Office Contact</p>
                             <p className="mb-0">0810 333 5040</p>
+                          </div>
+                          <div className="col-md-4">
+                            <p className="mb-2 text-muted">Private Line</p>
+                            <p className="mb-0">NIL</p>
                           </div>
                         </div>
                       </div>
@@ -86,19 +90,19 @@ export default function Profile() {
                       <div className="row">
                         <div className="col-md-3">
                           <p className="mb-2 text-muted">Facebook</p>
-                          <p className="mb-0">Giftedleggo</p>
+                          <p className="mb-0">@Giftedleggo</p>
                         </div>
                         <div className="col-md-3">
                           <p className="mb-2 text-muted">Twitter</p>
-                          <p className="mb-0">Giftedleggo</p>
+                          <p className="mb-0">@Giftedleggo</p>
                         </div>
                         <div className="col-md-3">
                           <p className="mb-2 text-muted">Instagram</p>
-                          <p className="mb-0">Giftedleggo</p>
+                          <p className="mb-0">@Giftedleggo</p>
                         </div>
                         <div className="col-md-3">
                           <p className="mb-2 text-muted">Tiktok</p>
-                          <p className="mb-0">Giftedleggo</p>
+                          <p className="mb-0">@Giftedleggo</p>
                         </div>
                       </div>
                     </div>
@@ -264,7 +268,7 @@ export default function Profile() {
                   <Card.Body>
                     <div className="row py-3">
 
-                      <div className="col-md-12 py-3 ">
+                      <div className="col-md-12 py-3 border-bottom">
                         <div className="row">
                           <div className="col-md-6">
                             <p className="mb-2 text-muted">Job Title/Role</p>
@@ -297,6 +301,41 @@ export default function Profile() {
                         </div>
                       </div>
 
+
+                      <div className="col-md-12 py-3 border-bottom">
+                        <div className="row">
+                          <div className="col-md-6">
+                            <p className="mb-2 text-muted">Job Title/Role</p>
+                            <p className="mb-0 d-inline mr-2">Software Developer</p>
+                            {/* <span className="badge badge-success">Present</span> */}
+                          </div>
+
+                          <div className="col-md-4">
+                            <p className="mb-2 text-muted">Search Directory</p>
+                            <p className="mb-0">Developer</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">Location</p>
+                            <p className="mb-0">Yaba, Lagos</p>
+                          </div>
+
+                          <div className="col-md-2 pt-4">
+                            <p className="mb-2 text-muted">Start Date</p>
+                            <p className="mb-0">August, 2019</p>
+                          </div>
+                          <div className="col-md-2 pt-4">
+                            <p className="mb-2 text-muted">End Date</p>
+                            <p className="mb-0 d-inline">April, 2020</p>
+                          </div>
+
+                          <div className="col-md-8 pt-4">
+                            <p className="mb-2 text-muted">Job Description</p>
+                            <p className="mb-0 ">Since 1960, Nigeria has been decoding Lorem Ipsum text for its readers, infiltrating its subcultures, observing and analyzing its shifting rhythms, digging up its unreported stories and confronting the city's political leaders. From the beginning... </p>
+                          </div>
+                        </div>
+                      </div>
+
+
                     </div>
                   </Card.Body>
                 </Accordion.Collapse>
@@ -316,13 +355,17 @@ export default function Profile() {
                       <div className="col-md-12 py-3 border-bottom">
                         <h6 className="mb-3 uppercase" style={{ color: "#8e9092b3" }}>Courses</h6>
                         <div className="row py-4">
-                          <div className="col-md-4">
+                          <div className="col-md-3">
                             <p className="mb-2 text-muted">School Name</p>
                             <p className="mb-0">Udemy</p>
                           </div>
-                          <div className="col-md-4">
+                          <div className="col-md-3">
                             <p className="mb-2 text-muted">Course</p>
                             <p className="mb-0">Digital Marketing</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">Grade</p>
+                            <p className="mb-0">Diploma in Dancing</p>
                           </div>
                           <div className="col-md-2">
                             <p className="mb-2 text-muted">Start Date</p>
@@ -447,17 +490,21 @@ export default function Profile() {
                             <p className="mb-2 text-muted">Recommended by</p>
                             <p className="mb-0">kaffy</p>
                           </div>
-                          <div className="col-md-3">
+                          <div className="col-md-2">
                             <p className="mb-2 text-muted">Relationship</p>
                             <p className="mb-0">Instructor</p>
                           </div>
-                          <div className="col-md-3">
+                          <div className="col-md-2">
                             <p className="mb-2 text-muted">Position</p>
                             <p className="mb-0">Team Lead</p>
                           </div>
                           <div className="col-md-3">
                             <p className="mb-2 text-muted">Event</p>
                             <p className="mb-0">Sparks</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">Date</p>
+                            <p className="mb-0">22/02/2020</p>
                           </div>
                           <div className="col-md-12 pt-4">
                             <p className="mb-2 text-muted">Recommendation Text</p>
@@ -474,17 +521,21 @@ export default function Profile() {
                             <p className="mb-2 text-muted">Recommended by</p>
                             <p className="mb-0">kaffy</p>
                           </div>
-                          <div className="col-md-3">
+                          <div className="col-md-2">
                             <p className="mb-2 text-muted">Relationship</p>
                             <p className="mb-0">Instructor</p>
                           </div>
-                          <div className="col-md-3">
+                          <div className="col-md-2">
                             <p className="mb-2 text-muted">Position</p>
                             <p className="mb-0">Team Lead</p>
                           </div>
                           <div className="col-md-3">
                             <p className="mb-2 text-muted">Event</p>
                             <p className="mb-0">Sparks</p>
+                          </div>
+                          <div className="col-md-2">
+                            <p className="mb-2 text-muted">Date</p>
+                            <p className="mb-0">22/02/2020</p>
                           </div>
                           <div className="col-md-12 pt-4">
                             <p className="mb-2 text-muted">Recommendation Text</p>
@@ -695,438 +746,6 @@ export default function Profile() {
               </Card>
 
             </Accordion>
-
-            {/* <div className="px-5 mb-5 border-b-2 border-gray-200 w-full h-12 text-xl text-gray-900">
-              Personal Info
-                </div> */}
-            {/* <div className="px-5">
-              <div>
-                <div className="flex mb-10">
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="First Name" textBody="Lagbaja" />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Last Name" textBody="Lagbaja" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="flex mb-10">
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Languages" textBody="Lagbaja" />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Birthday" textBody="16/3/2020" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="flex mb-10">
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Phone Number" textBody="0810 333 4232" />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Gender" textBody="Male" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="flex mb-10">
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Address" textBody="2, Lagos Road" />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="City" textBody="1Ikeja" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="flex mb-10">
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Hometown" textBody="Lagbaja" />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Living in" textBody="16/3/2020" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="flex mb-10">
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Facebook" textBody="Giftedleggo" />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Twitter" textBody="Giftedleggo" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="flex mb-10">
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Instagram" textBody="Giftedleggo" />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField textTitle="Tictok" textBody="Giftedleggo" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h4 className="uppercase">bio</h4>
-                <InputTextArea className="outline-none h-20 w-full" />
-              </div>
-            </div> */}
-
-
-            {/* Career and education section */}
-
-            {/* <section className="mb-20">
-              <div className="px-5 mb-5 border-b-2 border-gray-200 w-full h-12 text-xl text-gray-900">
-                Career &amp; Education
-                </div>
-              <div className="px-5">
-                <div>
-                  <div className="flex mb-12">
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Event Name" textBody="Lagbaja" />
-                    </div>
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Role" textBody="Performer" />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex mb-12">
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification"
-                      textBody="Lagbaja"
-                    />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification Level"
-                      textBody="Performer"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section> */}
-
-            {/* Interest Section */}
-
-            {/* <section className="mb-20">
-              <div className="px-5 mb-5 border-b-2 border-gray-200 w-full h-12 text-xl text-gray-900">
-                Interest
-                </div>
-              <div className="px-5">
-                <div>
-                  <div className="flex mb-12">
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Event Name" textBody="Lagbaja" />
-                    </div>
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Role" textBody="Performer" />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex mb-12">
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification"
-                      textBody="Lagbaja"
-                    />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification Level"
-                      textBody="Performer"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section> */}
-
-            {/* Professional Job History */}
-
-            {/* <section className="mb-20">
-              <div className="px-5 mb-5 border-b-2 border-gray-200 w-full h-12 text-xl text-gray-900">
-                Professional Job History
-                </div>
-              <div className="px-5">
-                <div>
-                  <div className="flex mb-12">
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Event Name" textBody="Lagbaja" />
-                    </div>
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Role" textBody="Performer" />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex mb-12">
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification"
-                      textBody="Lagbaja"
-                    />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification Level"
-                      textBody="Performer"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section> */}
-
-            {/* Experience & Achievement */}
-
-            {/* <section className="mb-20">
-              <div className="px-5 mb-5 border-b-2 border-gray-200 w-full h-12 text-xl text-gray-900">
-                Experience & Achievement
-                </div>
-              <div className="px-5">
-                <div>
-                  <div className="flex mb-12">
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Event Name" textBody="Lagbaja" />
-                    </div>
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Role" textBody="Performer" />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex mb-12">
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification"
-                      textBody="Lagbaja"
-                    />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification Level"
-                      textBody="Performer"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section> */}
-
-
-            {/* Recommendations */}
-
-            {/* <section className="mb-20">
-              <div className="px-5 mb-5 border-b-2 border-gray-200 w-full h-12 text-xl text-gray-900">
-                Recommendations
-                </div>
-              <div className="px-5">
-                <div>
-                  <div className="flex mb-12">
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Event Name" textBody="Lagbaja" />
-                    </div>
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Role" textBody="Performer" />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex mb-12">
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification"
-                      textBody="Lagbaja"
-                    />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification Level"
-                      textBody="Performer"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section> */}
-
-            {/* Events */}
-
-            {/* <section className="mb-20">
-              <div className="px-5 mb-5 border-b-2 border-gray-200 w-full h-12 text-xl text-gray-900">
-                Events
-                </div>
-              <div className="px-5">
-                <div>
-                  <div className="flex mb-12">
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Event Name" textBody="Lagbaja" />
-                    </div>
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Role" textBody="Performer" />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex mb-12">
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification"
-                      textBody="Lagbaja"
-                    />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification Level"
-                      textBody="Performer"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section> */}
-
-            {/* Pages */}
-
-            {/* <section className="mb-20">
-              <div className="px-5 mb-5 border-b-2 border-gray-200 w-full h-12 text-xl text-gray-900">
-                Pages
-                </div>
-              <div className="px-5">
-                <div>
-                  <div className="flex mb-12">
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Event Name" textBody="Lagbaja" />
-                    </div>
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Role" textBody="Performer" />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex mb-12">
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification"
-                      textBody="Lagbaja"
-                    />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification Level"
-                      textBody="Performer"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section> */}
-
-            {/* Groups */}
-
-            {/* <section className="mb-20">
-              <div className="px-5 mb-5 border-b-2 border-gray-200 w-full h-12 text-xl text-gray-900">
-                Groups
-                </div>
-              <div className="px-5">
-                <div>
-                  <div className="flex mb-12">
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Event Name" textBody="Lagbaja" />
-                    </div>
-                    <div className="w-1/2 h-12">
-                      <TextField textTitle="Role" textBody="Performer" />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex mb-12">
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification"
-                      textBody="Lagbaja"
-                    />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Professional Certification Level"
-                      textBody="Performer"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section> */}
-
-
-
-            {/* <div className="grid grid-cols-12 gap-4 row-gap-5 mx-8">
-              <div className="intro-y col-span-12 sm:col-span-6 mr-4">
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Photos</span>
-                  <div className="intro-y flex justify-center col-span-12 items-center">
-                    <Link className="text-red-700 px-4 rounded">View All</Link>
-                  </div>
-                </div>
-                <div class="">
-                  <div class="inline-block w-32 text-gray-700 text-center bg-gray-400 rounded-md h-32 mr-2 image-fit">
-                    1
-                  </div>
-                  <div class="inline-block w-32 text-gray-700 text-center bg-gray-400 rounded-md h-32 m-2 image-fit">
-                    2
-                  </div>
-                  <div class="inline-block w-32 text-gray-700 text-center bg-gray-400 rounded-md h-32 ml-2 image-fit">
-                    3
-                  </div>
-                </div>
-              </div>
-              <div className="intro-y col-span-12 sm:col-span-6 mr-4">
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Videos</span>
-                  <div className="intro-y flex justify-center col-span-12 items-center">
-                    <Link className="text-red-700 px-4 rounded">View All</Link>
-                  </div>
-                </div>
-                <div class="">
-                  <div class="inline-block w-32 text-gray-700 text-center bg-gray-400 rounded-md h-32 mr-2 image-fit">
-                    1
-                  </div>
-                  <div class="inline-block w-32 text-gray-700 text-center bg-gray-400 rounded-md h-32 m-2 image-fit">
-                    2
-                  </div>
-                  <div class="inline-block w-32 text-gray-700 text-center bg-gray-400 rounded-md h-32 ml-2 image-fit">
-                    3
-                  </div>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="side-nav__devider my-6 border-t-2"></div> */}
-
-            {/* <div className="px-5">
-              <div>
-                <div className="flex mb-12">
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Companies (Member of a group or page)"
-                      textBody="Lagbaja"
-                    />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Role, Joined"
-                      textBody="Member, 21/6/2020"
-                    />
-                  </div>
-                </div>
-                <div className="flex mb-12">
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Submitted Applications"
-                      textBody="Lagbaja"
-                    />
-                  </div>
-                  <div className="w-1/2 h-12">
-                    <TextField
-                      textTitle="Role, Date, submitted"
-                      textBody="Lagbaja"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div> */}
 
           </div>
           <div className="intro-y col-span-12 flex items-center m-10 pr-16">

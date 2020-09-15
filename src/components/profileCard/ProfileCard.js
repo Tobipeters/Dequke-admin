@@ -34,26 +34,43 @@ const ProfileCard = ({
   return (
     <div>
       <div className="intro-y box px-5 pt-5 mt-5 mb-5">
-        <div className="flex flex-col lg:flex-row border-b border-gray-200 pb-3 -mx-5">
-          <div className="flex flex-1 px-5 mx-4 items-center justify-center lg:justify-start">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 flex-none lg:w-32 lg:h-32 image-fit relative">
-              <img
-                alt="DeQube User Image"
-                className="rounded-full"
-                src={userImage || profileImage}
-              />
-            </div>
-            <div className="ml-5">
-              <div className="w-24 sm:w-40 truncate sm:whitespace-normal font-medium text-lg">
-                User ID
+
+        <div className="row border-b border-gray-200 pb-3 -mx-5">
+          <div className="col-md-4">
+            <div className="row pt-5">
+              <div className="col-md-6">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 image-fit relative d-inline-block">
+                  <img
+                    alt="DeQube User Image"
+                    className="rounded-full"
+                    src={userImage || profileImage}
+                  />
+                </div>
               </div>
-              <div className="text-blue-400 underline">
-                {`/${userId}` || "DevOps Engineer"}
+
+              <div className="col-md-6">
+                <div className="mb-5">
+                  <div className="truncate sm:whitespace-normal font-medium text-lg">
+                    User ID
+              </div>
+                  <div className="text-blue-400 underline">
+                    {`/${userId}` || "DevOps Engineer"}
+                  </div>
+                </div>
+                <div className="">
+                  <div className="truncate sm:whitespace-normal font-medium text-lg">
+                    User Type
+              </div>
+                  <div className="text-blue-400 underline">
+                   Performer
+                  </div>
+                </div>
               </div>
             </div>
+
           </div>
 
-          <div className="lg:mt-4 items-center lg:items-start flex-1 flex-col justify-center text-gray-600 px-5 border-l-2 border-r-2 border-gray-200 border-t lg:border-t-0 pt-5 lg:pt-0">
+          <div className="items-center lg:items-start col-md-4 justify-center text-gray-600  px-4 border-l-2 border-r-2 border-gray-200 border-t lg:border-t-0 pt-5 lg:pt-0">
             <div class="flex">
               <div class="h-12 w-3/5">
                 <div className="truncate sm:whitespace-normal items-center">
@@ -61,7 +78,7 @@ const ProfileCard = ({
                 </div>
               </div>
               <div class="w-2/5 h-12">
-                <div className="truncate sm:whitespace-normal text-blue-400 underline">
+                <div className="truncate sm:whitespace-normal text-blue-400 underline ">
                   17 May, 2020
                 </div>
               </div>
@@ -73,7 +90,7 @@ const ProfileCard = ({
                 </div>
               </div>
               <div class="w-2/5 h-12">
-                <div className="truncate sm:whitespace-normal text-blue-400 underline">
+                <div className="truncate sm:whitespace-normal text-blue-400 underline ">
                   17 May, 2020
                 </div>
               </div>
@@ -85,63 +102,67 @@ const ProfileCard = ({
                 </div>
               </div>
               <div class="w-2/5 h-12">
-                <div className="truncate sm:whitespace-normal text-blue-400 underline">
+                <div className="truncate sm:whitespace-normal text-blue-400 underline ">
                   Expert
                 </div>
               </div>
             </div>
           </div>
-          <div className="mt-4 lg:mt-4 flex-1 px-5 border-t lg:border-0 border-gray-200 pt-5 lg:pt-0">
+ 
+          <div className="col-md-4 px-4 border-t lg:border-0 border-gray-200 pt-5 lg:pt-0">
             <div class="flex">
               <div class="w-2/3 h-10">
                 <div className="truncate sm:whitespace-normal items-center">
-                  Qubed Level
+                  Followers
                 </div>
               </div>
               <div class="w-1/3 h-10">
-                <div className="truncate sm:whitespace-normal text-blue-400 underline">
-                  Expert
+                <div className="truncate sm:whitespace-normal font-weight-bold">
+                 6.6k
                 </div>
               </div>
             </div>
             <div class="flex">
               <div class="w-2/3 h-10">
                 <div className="truncate sm:whitespace-normal items-center">
-                  Qubed Level
+                  Followings
                 </div>
               </div>
               <div class="w-1/3 h-10">
-                <div className="truncate sm:whitespace-normal text-blue-400 underline">
-                  Expert
+                <div className="truncate sm:whitespace-normal font-weight-bold">
+                  6.6k
                 </div>
               </div>
             </div>
             <div class="flex">
               <div class="h-10 w-2/3">
                 <div className="truncate sm:whitespace-normal items-center">
-                  Qubed Level
+                 Profile Views
                 </div>
               </div>
               <div class="w-1/3 h-10">
-                <div className="truncate sm:whitespace-normal text-blue-400 underline">
-                  Expert
+                <div className="truncate sm:whitespace-normal font-weight-bold">
+                  5.5k
                 </div>
               </div>
             </div>
             <div class="flex">
               <div class="h-10 w-2/3">
-                <div className="truncate sm:whitespace-normal items-center">
-                  Qubed Level
+                <div className="truncate sm:whitespace-normal items-center ">
+                Likes
                 </div>
               </div>
               <div class="w-1/3 h-10">
-                <div className="truncate sm:whitespace-normal text-blue-400 underline">
-                  Expert
+                <div className="truncate sm:whitespace-normal font-weight-bold">
+               12k
                 </div>
               </div>
             </div>
           </div>
+
         </div>
+
+
         <div class="nav-tabs flex flex-col sm:flex-row justify-between lg:justify-between">
           <a
             data-toggle="tab"
