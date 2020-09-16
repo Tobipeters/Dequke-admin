@@ -15,6 +15,6 @@ const MenuItemList = ({ items }) => {
         );
       })}
     </ul>
-  );
+  ); 
 };
 export default MenuItemList;

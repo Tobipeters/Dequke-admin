@@ -5,7 +5,7 @@ import Button from "../../components/button/Button";
 import CustomBreadcrumb from "../../components/breadcrumb/CustomBreadcrumb";
 
 const data = {
-  start: "Settings",
+  // start: "Settings",
   links: [
     {
       label: "General Settings",

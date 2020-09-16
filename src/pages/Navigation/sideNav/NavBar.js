@@ -9,8 +9,8 @@ import MenuItemList from "../../../components/NavMenu/NavMenuItemList";
 const NavBar = () => {
   return (
     <nav className="side-nav">
-      <Link to="/dashboard" className="intro-x flex items-center pl-5 pt-4">
-        <img alt="DeQube Logo" src={logo} className="w-25" />
+      <Link to="/dashboard" className="intro-x flex items-center pl-2">
+        <img alt="DeQube Logo" width="160" height="50" src={logo} className="" />
       </Link>
       <div className="side-nav__devider my-6 border-t-1"></div>
       <MenuItemList items={menuItems} />
