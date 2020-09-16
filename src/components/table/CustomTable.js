@@ -40,8 +40,8 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(3),
   },
   container: {
-    maxHeight: 900,
-    maxWidth: 980,
+    width: '100%',
+    maxHeight: 'fit-content',
   },
   paginationContainer: {
     marginTop: 20,
@@ -226,20 +226,20 @@ export default function CustomTable({
                     <div
                       color="inherit"
                       className={column.style(value)}
-                      // style={{
-                      //   borderRadius: 5,
-                      //   backgroundColor: column.backgroundColor(value),
-                      // }}
+                    // style={{
+                    //   borderRadius: 5,
+                    //   backgroundColor: column.backgroundColor(value),
+                    // }}
                     >
                       {column.type && column.type === "emoji" ? (
                         <Twemoji text=":)" />
                       ) : (
-                        value
-                      )}
+                          value
+                        )}
                     </div>
                   ) : (
-                    value
-                  )}
+                          value
+                        )}
                 </TableCell>
               );
             })}
@@ -262,8 +262,8 @@ export default function CustomTable({
                 })}
               </TableCell>
             ) : (
-              ""
-            )}
+                ""
+              )}
           </StyledTableRow>
         );
       });
@@ -289,26 +289,20 @@ export default function CustomTable({
   };
   return (
     <Grid container>
-      <Grid item>
-        <Grid container justify="space-between" alignItems="flex-start">
-          <Grid item>
-            {search ? <Search handleSearchChange={handleSearchChange} /> : ""}
-          </Grid>
-        </Grid>
+      <Grid item xs={12}>
+          {search ? <Search handleSearchChange={handleSearchChange} /> : ""}
       </Grid>
-      <Grid item>
-        <Paper elevation={1}>
-          <TableContainer className={classes.container}>
-            <Table>
-              <TableHead className={classes.table_head}>
-                {renderTableColumns()}
-              </TableHead>
-              <TableBody ref={refs}>{renderTableRows()}</TableBody>
-            </Table>
-          </TableContainer>
-        </Paper>
+      <Grid item xs={12}>
+        <TableContainer component={Paper} className={classes.container}>
+          <Table>
+            <TableHead className={classes.table_head}>
+              {renderTableColumns()}
+            </TableHead>
+            <TableBody ref={refs}>{renderTableRows()}</TableBody>
+          </Table>
+        </TableContainer>
       </Grid>
-      <Grid item>
+      <Grid item xs={12}>
         <Grid
           container
           justify="space-between"
@@ -327,14 +321,14 @@ export default function CustomTable({
                 onChange={handleChange}
               />
             ) : (
-              ""
-            )}
+                ""
+              )}
           </Grid>
           <Grid item>
             {pagerows ? (
               <FormControl
                 className={classes.rowPageContainer}
-                style={{ padding: 15 }}
+                style={{ margin: 10 }}
               >
                 <Select
                   labelId="customized-select-label"
@@ -351,8 +345,8 @@ export default function CustomTable({
                 </Select>
               </FormControl>
             ) : (
-              ""
-            )}
+                ""
+              )}
           </Grid>
         </Grid>
       </Grid>

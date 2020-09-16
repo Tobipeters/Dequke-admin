@@ -3,7 +3,7 @@ import * as Icon from "react-feather";
 
 const Search = ({ handleSearchChange }) => {
   return (
-    <div className="search hidden sm:block" style={{ marginBottom: 30 }}>
+    <div className="search inline-block" style={{ marginBottom: 30 }}>
       <input
         type="text"
         class="search__input input placeholder-theme-13"

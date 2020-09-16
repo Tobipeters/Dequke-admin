@@ -33,9 +33,9 @@ const ProfileCard = ({
 
   return (
     <div>
-      <div className="intro-y box px-5 pt-5 mt-5 mb-5">
+      <div className="intro-y box pt-5 mt-5 mb-5">
 
-        <div className="row border-b border-gray-200 pb-3 -mx-5">
+        <div className="row px-4 border-b border-gray-200 pb-3 -mx-5">
           <div className="col-md-4">
             <div className="row pt-5">
               <div className="col-md-6">
@@ -169,7 +169,7 @@ const ProfileCard = ({
             data-target="#account"
             href="#account"
             className={
-              "p-4 sm:mr-8 flex items-center " + (openTab === 1 ? "active" : "")
+              "px-4 py-3 ml-4 sm:mr-8 flex items-center " + (openTab === 1 ? "active" : "")
             }
             onClick={(e) => {
               e.preventDefault();
@@ -184,7 +184,7 @@ const ProfileCard = ({
             data-target="#profile"
             href="#profile"
             className={
-              "p-4 sm:mr-8 flex items-center " + (openTab === 2 ? "active" : "")
+              "px-4 py-3 sm:mr-8 flex items-center " + (openTab === 2 ? "active" : "")
             }
             onClick={(e) => {
               e.preventDefault();
@@ -199,7 +199,7 @@ const ProfileCard = ({
             data-target="#privacy"
             href="#privacy"
             className={
-              "p-4 sm:mr-8 flex items-center " + (openTab === 3 ? "active" : "")
+              "px-4 py-3 sm:mr-8 flex items-center " + (openTab === 3 ? "active" : "")
             }
             onClick={(e) => {
               e.preventDefault();
@@ -214,7 +214,7 @@ const ProfileCard = ({
             data-target="#activity"
             href="#activity"
             className={
-              "p-4 sm:mr-8 flex items-center " + (openTab === 4 ? "active" : "")
+              "px-4 py-3 sm:mr-8 flex items-center " + (openTab === 4 ? "active" : "")
             }
             onClick={(e) => {
               e.preventDefault();
@@ -229,7 +229,7 @@ const ProfileCard = ({
             data-target="#membership"
             href="#membership"
             className={
-              "p-4 sm:mr-8 flex items-center " + (openTab === 5 ? "active" : "")
+              "px-4 py-3 sm:mr-8 flex items-center " + (openTab === 5 ? "active" : "")
             }
             onClick={(e) => {
               e.preventDefault();
@@ -244,7 +244,7 @@ const ProfileCard = ({
             data-target="#extra"
             href="#extra"
             className={
-              "p-4 sm:mr-8 flex items-center " + (openTab === 6 ? "active" : "")
+              "px-4 py-3 sm:mr-8 flex items-center " + (openTab === 6 ? "active" : "")
             }
             onClick={(e) => {
               e.preventDefault();
