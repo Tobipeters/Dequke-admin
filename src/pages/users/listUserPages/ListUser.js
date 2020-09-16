@@ -41,7 +41,7 @@ const ListUser = () => {
           />
           <Button
             className="flex items-center justify-center bg-red-100 text-red-700 font-bold py-2 px-4 rounded"
-            value="Save Changes"
+            value="Delete All Post"
             buttonIcon={<Icon.Trash2 className="w-4 h-4 mr-2" />}
           />
         </div>

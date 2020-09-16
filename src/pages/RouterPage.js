@@ -65,7 +65,9 @@ const RouterPage = () => {
       <Route
         exact
         path="/settings"
-        render={() => <Redirect to="/settings/general-settings" />}
+        render={() => <Redirect to="/settings/general-settings"
+         />
+      }
       />
       <Route
         path="/settings"
