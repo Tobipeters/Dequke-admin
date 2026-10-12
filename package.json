@@ -33,11 +33,11 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "node api.js && npm run watch:css && react-scripts start",
-    "build": "node api.js && npm run build:css && react-scripts build",
+    "start": "node init && npm run watch:css && react-scripts start",
+    "build": "node init && npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "build:css": "node init && postcss src/assets/tailwind.css -o src/assets/main.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "eslintConfig": {
